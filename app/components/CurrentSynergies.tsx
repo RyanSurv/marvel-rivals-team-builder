@@ -22,7 +22,7 @@ export default function CurrentSynergies({
 
       {synergies.map((synergy) => {
         return (
-          <Card className="flex gap-8 max-w-3xl p-2">
+          <Card key={synergy.id} className="flex gap-8 max-w-3xl p-2">
             <Image
               className="cursor-pointer hover:shadow-lg hover:scale-110 transition"
               src={`/synergy-icons/${synergy.title
